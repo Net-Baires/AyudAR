@@ -1,33 +1,11 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=devforecourtstorage;AccountKey=YjBvnyL6/EwRlrBaKHNSWt82TA46gPHZKNFd1TKI1rsAkppXMmvYHr4vsB7lQ1BKk42qAWeUQQRQVpmS+6lJBQ==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ayudardevstorage;AccountKey=O1X/8n9wInJfxMF4D6czbSs3sawE27JjB28Owcuh0uNVuPxdym3rAH20MjwmoJvFikZOcLDjN9rSIfoIvqZKHg==;EndpointSuffix=core.windows.net",
     "AzureWebJobsDashboard": "",
-    "STORAGE_URL": "DefaultEndpointsProtocol=https;AccountName=devforecourtstorage;AccountKey=YjBvnyL6/EwRlrBaKHNSWt82TA46gPHZKNFd1TKI1rsAkppXMmvYHr4vsB7lQ1BKk42qAWeUQQRQVpmS+6lJBQ==;EndpointSuffix=core.windows.net",
-    "PICTURE_CONTAINER": "incident-pictures",
-    "INCIDENTS_CONTAINER": "incidents",
-    "STRIPE_API_KEY": "sk_test_NYltW7aVVfjRF9cGeAazBwr1",
-    "APPINSIGHTS_INSTRUMENTATIONKEY": "1b50d30e-69b0-44c0-891b-ff39fe47711d",
-    "ZUMO-API-KEY": "secret",
-    "ZUMO-API": "http://forecourweb2.azurewebsites.net",
-    "AUTH0-URL": "https://intelico.auth0.com",
-    "AUTH0-CLIENT": "ML2S6FIU8QNmE0msamvt4PGfvXB0cvOW",
-    "AUTH0-SECRET": "0GNoeoRabC-rvXYpz94MgNPzQCUgyqFMGOCxWy6syboJbRWdCXpAGbyYBQuPG_e9",
-    "AUTH0-AUD": "https://intelico.auth0.com/api/v2/",
+    "STORAGE_URL": "DefaultEndpointsProtocol=https;AccountName=ayudardevstorage;AccountKey=O1X/8n9wInJfxMF4D6czbSs3sawE27JjB28Owcuh0uNVuPxdym3rAH20MjwmoJvFikZOcLDjN9rSIfoIvqZKHg==;EndpointSuffix=core.windows.net",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "eb195863-f840-4e53-ac8a-94db36c7c70d",
     "DOCUMENTDBURL": "https://forecourt.documents.azure.com:443/",
-    "DOCUMENTDBKEY": "bmgas8Ji0imnck9MItc7hHdIuWhfSKNVlMgkrOtqTmbEdSDvi2yZ0UQOThxhjjgebog9ihWkQrZskwXpPVHDgg==",
-    "DAYMINUTES": "2",
-    "SENDGRID_TEMPLATE": "98346703-3c66-4a1e-81b4-9ed8cdbbea04",
-    "SENDGRID_APIKEY": "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",
-    "SENDGRID_FROM": "info@forecourt.com",
-    "TWILIONUMBER": "+441224393284",
-    "TWILIOSSID": "AC29546d3212c1436e4ccfb0215bf1c40b",
-    "TWILIOTOKEN": "81844727f50caa3fd67367ca484ae6c0",
-    "LETTER_RECIEVER": "barcho@mailinator.com",
-    "TABLES_URL": "http://forecourweb2.azurewebsites.net",
-    "TABLES_KEY": "secret",
-    //"AzureWebJobsDocumentDBConnectionString": "AccountEndpoint=https://forecourt.documents.azure.com:443/;AccountKey=jPVS37vUSrGSs0Smz12K0ghU53cjlzhmjHaMuo8c8Y7sQR4yv8NMQ2edJ7Q9B8mKsbQw6pfchmR9JC0DZlyl8Q==;",
-    "PERIOD": "0 */2 * * * *"
-
+    "DOCUMENTDBKEY": "bmgas8Ji0imnck9MItc7hHdIuWhfSKNVlMgkrOtqTmbEdSDvi2yZ0UQOThxhjjgebog9ihWkQrZskwXpPVHDgg=="
   }
 }
