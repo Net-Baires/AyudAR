@@ -22,7 +22,8 @@ namespace server.Model
         public string Device { get; set; }
         public Who WhoIs { get; set; }
         public Address CollectAddress { get; set; }
-        public Availablity Schedule { get; set; }
+        public Availability Availability { get; set; }
+        public List<Package> Packages { get; set; }
     }
 
     public class NewDriver {
@@ -38,7 +39,7 @@ namespace server.Model
         public string Device { get; set; }
         public Who WhoIs { get; set; }
         public Address CollectAddress { get; set; }
-        public Availablity Schedule { get; set; }
+        public Availability Schedule { get; set; }
         public Driver Driver { get; set; }
         public DonationStatus DonationStatus { get; set; }
 
@@ -55,9 +56,10 @@ namespace server.Model
     public class Driver {
         public string Firstname { get; set; }
         public string Lastname { get; set; }
+        public string Email { get; set; }
         public string SocialNumber { get; set; }
         public string CollectZone { get; set; }
-        public Availablity Availablity { get; set; }
+        public Availability Availability { get; set; }
     }
 
     public class Package
@@ -77,6 +79,7 @@ namespace server.Model
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Email { get; set; }
     }
 
     public class Address
@@ -87,7 +90,7 @@ namespace server.Model
         public string Zipcode { get; set; }
     }
 
-    public class Availablity
+    public class Availability
     {
         public List<TimeRange> Schedule { get; set; }
     }
