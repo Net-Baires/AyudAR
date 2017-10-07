@@ -42,7 +42,7 @@ namespace server
             await binder.SaveBlobAsync(newDriver, $"drivers/{newDriver.Id}.json");
             await collector.AddAsync(new RecalculateRoutesMessage { Type = "Driver", Id = newDriver.Id });
 
-            return req.CreateResponse(HttpStatusCode.OK);
+            return req.CreateResponse(HttpStatusCode.OK, newDriver);
 
         }
 
@@ -70,7 +70,7 @@ namespace server
 
             telemetry.TrackEvent("NewDriver");
 
-            return req.CreateResponse(HttpStatusCode.OK);
+            return req.CreateResponse(HttpStatusCode.OK, newDonation);
         }
 
     }
@@ -138,5 +138,5 @@ namespace server
             }
         }
     }
-    
+
 }
