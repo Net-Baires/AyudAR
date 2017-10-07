@@ -18,16 +18,16 @@ namespace server
         private static TelemetryClient telemetry = new TelemetryClient();
         private static string key = TelemetryConfiguration.Active.InstrumentationKey = System.Environment.GetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATIONKEY", EnvironmentVariableTarget.Process);
 
-        //[FunctionName("OnRecalculateRoutes")]
-        //public static async Task OnRecalculateRoutes(
-        //    [QueueTrigger("recalculate-routes")] RecalculateRoutesMessage message,
-        //    IBinder binder,
-        //    ExecutionContext context,
-        //    TraceWriter log)
-        //{
-        //    telemetry.Context.Operation.Id = context.InvocationId.ToString();
+        [FunctionName("OnRecalculateRoutes")]
+        public static async Task OnRecalculateRoutes(
+            [QueueTrigger("recalculate-routes")] RecalculateRoutesMessage message,
+            IBinder binder,
+            ExecutionContext context,
+            TraceWriter log)
+        {
+            telemetry.Context.Operation.Id = context.InvocationId.ToString();
 
-        //}
+        }
 
         [FunctionName("drivers")]
         public static async Task<HttpResponseMessage> CreateDriver(
@@ -55,7 +55,9 @@ namespace server
             TraceWriter log)
         {
             telemetry.Context.Operation.Id = context.InvocationId.ToString();
+            log.Info("a");
             var newDonation = await req.Content.ReadAsAsync<NewDonation>();
+            log.Info("b");
 
             //TODO add validations
             //if (newIncident.Location == null) return req.CreateResponse(HttpStatusCode.BadRequest, "Missing location object");
@@ -68,7 +70,7 @@ namespace server
             await binder.SaveBlobAsync(newDonation, $"donations/{newDonation.Id}.json");
             await collector.AddAsync(new RecalculateRoutesMessage { Type = "Donation", Id = newDonation.Id });
 
-            telemetry.TrackEvent("NewDriver");
+            //telemetry.TrackEvent("NewDriver");
 
             return req.CreateResponse(HttpStatusCode.OK, newDonation);
         }
