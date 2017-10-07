@@ -22,6 +22,17 @@ https://ayudar-functions-dev.azurewebsites.net/api/drivers
 
 https://ayudar-functions-dev.azurewebsites.net/api/donations
 
+### Aspectos de seguridad
+- Palabra clave entre donante y conductor generada por la aplicacion.
+- tracking para los distintos checkpoints o puntos de control de los paquetes.
+
+
+### Gratificaciones
+- la plataforma comparte en Facebook cuando un conductor translada los paquetes de los donantes al centro de acopio.
+- la plataforma notifica al donante cada checkpoint.
+- la plataforma notifica cuando la donacion llego al destino final.
+
+
 ### Donaciones
 
 #### Crear una nueva donacion
